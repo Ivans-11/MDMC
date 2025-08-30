@@ -1,0 +1,8 @@
+{
+    "variants":{
+        "facing=north":{"model":"mayday:block/ashin_lantern"},
+        "facing=east":{"model":"mayday:block/ashin_lantern","y":90},
+        "facing=south":{"model":"mayday:block/ashin_lantern","y":180},
+        "facing=west":{"model":"mayday:block/ashin_lantern","y":270}
+    }
+}

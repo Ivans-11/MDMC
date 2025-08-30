@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      "minecraft:jack_o_lantern",
+      "minecraft:blue_dye"
+    ],
+    "result": {
+      "id": "mayday:ming_lantern",
+      "count": 1
+    }
+}

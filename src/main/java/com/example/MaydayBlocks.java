@@ -18,6 +18,7 @@ import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -42,7 +43,7 @@ public class MaydayBlocks {
                         .pistonBehavior(PistonBehavior.DESTROY)
         );
 
-        // Register the pumpkin item
+        // Register the item
         BlockItem item = registerItem(
                 name,
                 settings -> new BlockItem(block,
@@ -56,7 +57,29 @@ public class MaydayBlocks {
                 )
         );
 
-        // Store the pumpkin item for later use
+        // Store the item for later use
+        PUMPKIN_ITEMS.put(name, item);
+        return block;
+    }
+
+    public static CarvedPumpkinBlock registerLanternVariant(String name, MapColor mapColor) {
+        // Register the latern block
+        CarvedPumpkinBlock block = register(
+                name,
+                CarvedPumpkinBlock::new,
+                Settings.create()
+                        .mapColor(mapColor)
+                        .strength(1.0F)
+                        .sounds(BlockSoundGroup.WOOD)
+                        .luminance((state) -> { return 15; })
+                        .allowsSpawning(Blocks::always)
+                        .pistonBehavior(PistonBehavior.DESTROY)
+        );
+
+        // Register the item
+        BlockItem item = registerItem(name, settings -> new BlockItem(block, settings));
+
+        // Store the item for later use
         PUMPKIN_ITEMS.put(name, item);
         return block;
     }
@@ -75,7 +98,8 @@ public class MaydayBlocks {
     
     public static void init() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            PUMPKIN_ITEMS.values().forEach(entries::add);
-        });// Register the pumpkin items to the natural items group
+            //PUMPKIN_ITEMS.values().forEach(entries::add);
+            PUMPKIN_ITEMS.values().forEach(item -> entries.addAfter(Items.JACK_O_LANTERN, item));
+        });// Register the items to the natural items group
     }
 }

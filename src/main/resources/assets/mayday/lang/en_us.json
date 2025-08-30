@@ -1,7 +1,12 @@
 {
     "item.mayday.ashin": "Ashin Pumpkin",
+    "item.mayday.ashin_lantern": "Ashin Lantern",
     "item.mayday.monster": "Monster Pumpkin",
+    "item.mayday.monster_lantern": "Monster Lantern",
     "item.mayday.masa": "Masa Pumpkin",
+    "item.mayday.masa_lantern": "Masa Lantern",
     "item.mayday.stone": "Stone Pumpkin",
-    "item.mayday.ming": "Ming Pumpkin"
+    "item.mayday.stone_lantern": "Stone Lantern",
+    "item.mayday.ming": "Ming Pumpkin",
+    "item.mayday.ming_lantern": "Ming Lantern"
 }

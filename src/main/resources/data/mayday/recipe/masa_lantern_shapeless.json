@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      "minecraft:jack_o_lantern",
+      "minecraft:yellow_dye"
+    ],
+    "result": {
+      "id": "mayday:masa_lantern",
+      "count": 1
+    }
+}

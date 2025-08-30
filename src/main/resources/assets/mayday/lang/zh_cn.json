@@ -1,7 +1,12 @@
 {
     "item.mayday.ashin": "阿信瓜",
+    "item.mayday.ashin_lantern": "阿信瓜灯",
     "item.mayday.monster": "怪兽瓜",
+    "item.mayday.monster_lantern": "怪兽瓜灯",
     "item.mayday.masa": "玛莎瓜",
+    "item.mayday.masa_lantern": "玛莎瓜灯",
     "item.mayday.stone": "石头瓜",
-    "item.mayday.ming": "冠佑瓜"
+    "item.mayday.stone_lantern": "石头瓜灯",
+    "item.mayday.ming": "冠佑瓜",
+    "item.mayday.ming_lantern": "冠佑瓜灯"
 }

@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "W",
+        "R"
+    ],
+    "key": {
+        "W": "mayday:monster",
+        "R": "minecraft:torch"
+    },
+    "result": {
+        "id": "mayday:monster_lantern",
+        "count": 1
+    }
+}

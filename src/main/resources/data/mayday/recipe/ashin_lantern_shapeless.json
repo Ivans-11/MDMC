@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      "minecraft:jack_o_lantern",
+      "minecraft:pink_dye"
+    ],
+    "result": {
+      "id": "mayday:ashin_lantern",
+      "count": 1
+    }
+}

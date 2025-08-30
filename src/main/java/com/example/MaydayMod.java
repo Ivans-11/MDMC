@@ -13,10 +13,15 @@ public class MaydayMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		MaydayBlocks.registerPumpkinVariant("ashin", MapColor.PINK);
+		MaydayBlocks.registerLanternVariant("ashin_lantern", MapColor.PINK);
         MaydayBlocks.registerPumpkinVariant("monster", MapColor.RED);
+		MaydayBlocks.registerLanternVariant("monster_lantern", MapColor.RED);
         MaydayBlocks.registerPumpkinVariant("stone", MapColor.GREEN);
+		MaydayBlocks.registerLanternVariant("stone_lantern", MapColor.GREEN);
         MaydayBlocks.registerPumpkinVariant("masa", MapColor.YELLOW);
+		MaydayBlocks.registerLanternVariant("masa_lantern", MapColor.YELLOW);
         MaydayBlocks.registerPumpkinVariant("ming", MapColor.BLUE);
+		MaydayBlocks.registerLanternVariant("ming_lantern", MapColor.BLUE);
 		MaydayBlocks.init();
 	}
 }
