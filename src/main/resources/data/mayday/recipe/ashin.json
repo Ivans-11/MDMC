@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      "minecraft:carved_pumpkin",
+      "minecraft:pink_dye"
+    ],
+    "result": {
+      "id": "mayday:ashin",
+      "count": 1
+    }
+}

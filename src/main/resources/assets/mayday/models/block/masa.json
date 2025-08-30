@@ -1,0 +1,12 @@
+{
+    "parent":"minecraft:block/cube",
+    "textures":{
+        "down":"mayday:block/yellow_top",
+        "east":"mayday:block/yellow_side",
+        "north":"mayday:block/masa",
+        "particle":"mayday:block/masa",
+        "south":"mayday:block/yellow_side",
+        "up":"mayday:block/yellow_top",
+        "west":"mayday:block/yellow_side"
+    }
+}

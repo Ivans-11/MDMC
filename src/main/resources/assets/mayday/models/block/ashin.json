@@ -1,0 +1,12 @@
+{
+    "parent":"minecraft:block/cube",
+    "textures":{
+        "down":"mayday:block/pink_top",
+        "east":"mayday:block/pink_side",
+        "north":"mayday:block/ashin",
+        "particle":"mayday:block/ashin",
+        "south":"mayday:block/pink_side",
+        "up":"mayday:block/pink_top",
+        "west":"mayday:block/pink_side"
+    }
+}

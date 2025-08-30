@@ -1,0 +1,12 @@
+{
+    "parent":"minecraft:block/cube",
+    "textures":{
+        "down":"mayday:block/red_top",
+        "east":"mayday:block/red_side",
+        "north":"mayday:block/monster",
+        "particle":"mayday:block/monster",
+        "south":"mayday:block/red_side",
+        "up":"mayday:block/red_top",
+        "west":"mayday:block/red_side"
+    }
+}
