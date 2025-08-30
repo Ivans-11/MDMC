@@ -1,7 +1,7 @@
 package com.example;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Function;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -28,7 +28,8 @@ import net.minecraft.util.Identifier;
 
 public class MaydayBlocks {
 
-    private static final Map<String, BlockItem> PUMPKIN_ITEMS = new HashMap<>();
+    public static final String MOD_ID = "mayday";
+    private static final List<BlockItem> PUMPKIN_ITEMS = new ArrayList<>();
 
     public static CarvedPumpkinBlock registerPumpkinVariant(String name, MapColor mapColor) {
         // Register the pumpkin block
@@ -51,14 +52,15 @@ public class MaydayBlocks {
                                 DataComponentTypes.EQUIPPABLE,
                                 EquippableComponent.builder(EquipmentSlot.HEAD)
                                         .swappable(false)
-                                        .cameraOverlay(Identifier.ofVanilla("misc/pumpkinblur"))
+                                        //.cameraOverlay(Identifier.ofVanilla("misc/pumpkinblur"))
+                                        .cameraOverlay(Identifier.of(MOD_ID, "misc/" + name))
                                         .build()
                         )
                 )
         );
 
         // Store the item for later use
-        PUMPKIN_ITEMS.put(name, item);
+        PUMPKIN_ITEMS.add(item);
         return block;
     }
 
@@ -80,26 +82,28 @@ public class MaydayBlocks {
         BlockItem item = registerItem(name, settings -> new BlockItem(block, settings));
 
         // Store the item for later use
-        PUMPKIN_ITEMS.put(name, item);
+        PUMPKIN_ITEMS.add(item);
         return block;
     }
     
     private static <T extends Block> T register(String path, Function<AbstractBlock.Settings, T> factory, AbstractBlock.Settings settings) {
-        final Identifier identifier = Identifier.of("mayday", path);
+        final Identifier identifier = Identifier.of(MOD_ID, path);
         final RegistryKey<Block> registryKey = RegistryKey.of(RegistryKeys.BLOCK, identifier);
         return Registry.register(Registries.BLOCK, identifier, factory.apply(settings.registryKey(registryKey)));
     }
 
     private static <T extends Item> T registerItem(String path, Function<Item.Settings, T> itemFunction) {
-        final Identifier identifier = Identifier.of("mayday", path);
+        final Identifier identifier = Identifier.of(MOD_ID, path);
 		final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, identifier);
 		return Registry.register(Registries.ITEM, registryKey, itemFunction.apply(new Item.Settings().registryKey(registryKey)));
 	}
     
     public static void init() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            //PUMPKIN_ITEMS.values().forEach(entries::add);
-            PUMPKIN_ITEMS.values().forEach(item -> entries.addAfter(Items.JACK_O_LANTERN, item));
-        });// Register the items to the natural items group
+            // Add the items to the natural items group
+            for (BlockItem item : PUMPKIN_ITEMS) {
+                entries.addBefore(Items.HAY_BLOCK, item);
+            }
+        });
     }
 }

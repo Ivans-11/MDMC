@@ -1,0 +1,12 @@
+{
+    "earth": {
+      "sounds": [
+        "mayday:music/earth"
+      ]
+    },
+    "smoke": {
+      "sounds": [
+        "mayday:music/smoke"
+      ]
+    }
+}
