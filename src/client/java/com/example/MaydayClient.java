@@ -8,7 +8,7 @@ import net.minecraft.sound.SoundCategory;
 
 public class MaydayClient implements ClientModInitializer {
 	public static final String MOD_ID = "mayday";
-	private static MaydaySoundInstance smokeSoundInstance = null;
+	private static MaydaySoundInstance maydaySoundInstance = null;
 
 	@Override
 	public void onInitializeClient() {
@@ -19,15 +19,17 @@ public class MaydayClient implements ClientModInitializer {
 				ItemStack head = client.player.getEquippedStack(EquipmentSlot.HEAD);
 				String key = head.getItem().toString();
 				if (key.contains("mayday")) {
-					if (smokeSoundInstance == null) {
-						System.out.println("Playing smoke sound");
-						smokeSoundInstance = new MaydaySoundInstance(client.player, MaydaySounds.SMOKE_SOUND, SoundCategory.PLAYERS);
-						client.getSoundManager().play(smokeSoundInstance);
+					if (maydaySoundInstance == null) {
+						maydaySoundInstance = new MaydaySoundInstance(client.player, MaydaySounds.getSound(key), SoundCategory.PLAYERS, key);
+						client.getSoundManager().play(maydaySoundInstance);
+					} else if (!maydaySoundInstance.name.equals(key)) {
+						maydaySoundInstance.stop();
+						maydaySoundInstance = new MaydaySoundInstance(client.player, MaydaySounds.getSound(key), SoundCategory.PLAYERS, key);
+						client.getSoundManager().play(maydaySoundInstance);
 					}
-				} else if (smokeSoundInstance != null) {
-					System.out.println("Stopping smoke sound");
-					client.getSoundManager().stop(smokeSoundInstance);
-					smokeSoundInstance = null;
+				} else if (maydaySoundInstance != null) {
+					maydaySoundInstance.stop();
+					maydaySoundInstance = null;
 				}
 			}
 		});

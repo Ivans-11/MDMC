@@ -8,12 +8,14 @@ import net.minecraft.sound.SoundEvent;
 
 public class MaydaySoundInstance extends MovingSoundInstance {
 	private final LivingEntity entity;
+	public String name;
 
-	public MaydaySoundInstance(LivingEntity entity, SoundEvent soundEvent, SoundCategory soundCategory) {
+	public MaydaySoundInstance(LivingEntity entity, SoundEvent soundEvent, SoundCategory soundCategory, String name) {
 		super(soundEvent, soundCategory, SoundInstance.createRandom());
 		// In this constructor we also add the sound source (LivingEntity) of
 		// the SoundInstance and store it in the current object
 		this.entity = entity;
+		this.name = name;
 		// set up default values when the sound is about to start
 		this.volume = 0.5f;
 		this.pitch = 1.0f;
@@ -46,5 +48,9 @@ public class MaydaySoundInstance extends MovingSoundInstance {
 		this.x = this.entity.getX();
 		this.y = this.entity.getY();
 		this.z = this.entity.getZ();
+	}
+
+	public void stop() {
+		this.setDone();
 	}
 }

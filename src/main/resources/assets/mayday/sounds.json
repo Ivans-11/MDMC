@@ -1,12 +1,27 @@
 {
-    "earth": {
+    "real": {
       "sounds": [
-        "mayday:music/earth"
+        "mayday:music/real"
       ]
     },
-    "smoke": {
+    "nine": {
       "sounds": [
-        "mayday:music/smoke"
+        "mayday:music/nine"
+      ]
+    },
+    "star": {
+      "sounds": [
+        "mayday:music/star"
+      ]
+    },
+    "thing": {
+      "sounds": [
+        "mayday:music/thing"
+      ]
+    },
+    "superman": {
+      "sounds": [
+        "mayday:music/superman"
       ]
     }
 }
