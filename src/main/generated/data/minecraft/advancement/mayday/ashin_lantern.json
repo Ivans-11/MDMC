@@ -13,13 +13,18 @@
     }
   },
   "display": {
-    "description": "You got the ashin_lantern lantern!",
+    "description": {
+      "translate": "advance.mayday.ashin_lantern.description"
+    },
     "frame": "challenge",
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "mayday:ashin_lantern"
     },
-    "title": "ASHIN_LANTERN LANTERN"
+    "title": {
+      "translate": "advance.mayday.ashin_lantern"
+    }
   },
   "requirements": [
     [

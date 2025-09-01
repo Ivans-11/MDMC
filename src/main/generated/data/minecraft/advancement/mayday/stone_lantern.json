@@ -13,13 +13,18 @@
     }
   },
   "display": {
-    "description": "You got the stone_lantern lantern!",
+    "description": {
+      "translate": "advance.mayday.stone_lantern.description"
+    },
     "frame": "challenge",
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "mayday:stone_lantern"
     },
-    "title": "STONE_LANTERN LANTERN"
+    "title": {
+      "translate": "advance.mayday.stone_lantern"
+    }
   },
   "requirements": [
     [

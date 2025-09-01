@@ -13,12 +13,16 @@
   },
   "display": {
     "background": "minecraft:gui/advancements/backgrounds/adventure",
-    "description": "You received the tutorial book.",
+    "description": {
+      "translate": "advance.mayday.welcome"
+    },
     "icon": {
       "count": 1,
       "id": "mayday:tutorial_book"
     },
-    "title": "Welcome to the Maydayland!"
+    "title": {
+      "translate": "advance.mayday.tutorial_book"
+    }
   },
   "requirements": [
     [

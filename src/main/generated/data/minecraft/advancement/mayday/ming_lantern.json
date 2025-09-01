@@ -13,13 +13,18 @@
     }
   },
   "display": {
-    "description": "You got the ming_lantern lantern!",
+    "description": {
+      "translate": "advance.mayday.ming_lantern.description"
+    },
     "frame": "challenge",
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "mayday:ming_lantern"
     },
-    "title": "MING_LANTERN LANTERN"
+    "title": {
+      "translate": "advance.mayday.ming_lantern"
+    }
   },
   "requirements": [
     [

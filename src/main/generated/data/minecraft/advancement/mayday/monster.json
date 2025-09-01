@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:mayday/root",
   "criteria": {
-    "monster": {
+    "got_monster": {
       "conditions": {
         "items": [
           {
@@ -13,16 +13,20 @@
     }
   },
   "display": {
-    "description": "You got the monster pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "description": {
+      "translate": "advance.mayday.monster.description"
+    },
     "icon": {
       "count": 1,
       "id": "mayday:monster"
     },
-    "title": "MONSTER PUMPKIN"
+    "title": {
+      "translate": "advance.mayday.monster"
+    }
   },
   "requirements": [
     [
-      "monster"
+      "got_monster"
     ]
   ],
   "sends_telemetry_event": true

@@ -53,14 +53,18 @@
     }
   },
   "display": {
-    "description": "Good job! You received the Mayday Banner Pattern as a reward. You can now make a banner with it.",
+    "description": {
+      "translate": "advance.mayday.mayday_banner_pattern"
+    },
     "frame": "goal",
     "hidden": true,
     "icon": {
       "count": 1,
       "id": "mayday:mayday_banner_pattern"
     },
-    "title": "Success"
+    "title": {
+      "translate": "advance.mayday.success"
+    }
   },
   "requirements": [
     [

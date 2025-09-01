@@ -13,13 +13,18 @@
     }
   },
   "display": {
-    "description": "You got the monster_lantern lantern!",
+    "description": {
+      "translate": "advance.mayday.monster_lantern.description"
+    },
     "frame": "challenge",
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "mayday:monster_lantern"
     },
-    "title": "MONSTER_LANTERN LANTERN"
+    "title": {
+      "translate": "advance.mayday.monster_lantern"
+    }
   },
   "requirements": [
     [

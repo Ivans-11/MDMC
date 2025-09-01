@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:mayday/root",
   "criteria": {
-    "masa": {
+    "got_masa": {
       "conditions": {
         "items": [
           {
@@ -13,16 +13,20 @@
     }
   },
   "display": {
-    "description": "You got the masa pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "description": {
+      "translate": "advance.mayday.masa.description"
+    },
     "icon": {
       "count": 1,
       "id": "mayday:masa"
     },
-    "title": "MASA PUMPKIN"
+    "title": {
+      "translate": "advance.mayday.masa"
+    }
   },
   "requirements": [
     [
-      "masa"
+      "got_masa"
     ]
   ],
   "sends_telemetry_event": true

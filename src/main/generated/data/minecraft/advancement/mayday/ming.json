@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:mayday/root",
   "criteria": {
-    "ming": {
+    "got_ming": {
       "conditions": {
         "items": [
           {
@@ -13,16 +13,20 @@
     }
   },
   "display": {
-    "description": "You got the ming pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "description": {
+      "translate": "advance.mayday.ming.description"
+    },
     "icon": {
       "count": 1,
       "id": "mayday:ming"
     },
-    "title": "MING PUMPKIN"
+    "title": {
+      "translate": "advance.mayday.ming"
+    }
   },
   "requirements": [
     [
-      "ming"
+      "got_ming"
     ]
   ],
   "sends_telemetry_event": true

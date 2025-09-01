@@ -1,0 +1,87 @@
+{
+  "parent": "minecraft:mayday/success",
+  "criteria": {
+    "got_ashin_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ashin_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_masa_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:masa_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_ming_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ming_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_monster_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:monster_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_stone_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:stone_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advance.mayday.final.description"
+    },
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "mayday:mayday_banner_pattern"
+    },
+    "title": {
+      "translate": "advance.mayday.final"
+    }
+  },
+  "requirements": [
+    [
+      "got_ashin_lantern"
+    ],
+    [
+      "got_monster_lantern"
+    ],
+    [
+      "got_stone_lantern"
+    ],
+    [
+      "got_masa_lantern"
+    ],
+    [
+      "got_ming_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

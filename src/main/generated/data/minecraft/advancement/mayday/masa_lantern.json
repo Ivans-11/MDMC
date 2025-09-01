@@ -13,13 +13,18 @@
     }
   },
   "display": {
-    "description": "You got the masa_lantern lantern!",
+    "description": {
+      "translate": "advance.mayday.masa_lantern.description"
+    },
     "frame": "challenge",
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "mayday:masa_lantern"
     },
-    "title": "MASA_LANTERN LANTERN"
+    "title": {
+      "translate": "advance.mayday.masa_lantern"
+    }
   },
   "requirements": [
     [

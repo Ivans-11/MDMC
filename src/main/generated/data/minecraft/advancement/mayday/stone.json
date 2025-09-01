@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:mayday/root",
   "criteria": {
-    "stone": {
+    "got_stone": {
       "conditions": {
         "items": [
           {
@@ -13,16 +13,20 @@
     }
   },
   "display": {
-    "description": "You got the stone pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "description": {
+      "translate": "advance.mayday.stone.description"
+    },
     "icon": {
       "count": 1,
       "id": "mayday:stone"
     },
-    "title": "STONE PUMPKIN"
+    "title": {
+      "translate": "advance.mayday.stone"
+    }
   },
   "requirements": [
     [
-      "stone"
+      "got_stone"
     ]
   ],
   "sends_telemetry_event": true

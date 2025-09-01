@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:mayday/root",
   "criteria": {
-    "ashin": {
+    "got_ashin": {
       "conditions": {
         "items": [
           {
@@ -13,16 +13,20 @@
     }
   },
   "display": {
-    "description": "You got the ashin pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "description": {
+      "translate": "advance.mayday.ashin.description"
+    },
     "icon": {
       "count": 1,
       "id": "mayday:ashin"
     },
-    "title": "ASHIN PUMPKIN"
+    "title": {
+      "translate": "advance.mayday.ashin"
+    }
   },
   "requirements": [
     [
-      "ashin"
+      "got_ashin"
     ]
   ],
   "sends_telemetry_event": true
