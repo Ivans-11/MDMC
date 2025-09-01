@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:mayday/root",
+  "criteria": {
+    "masa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:masa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the masa pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "icon": {
+      "count": 1,
+      "id": "mayday:masa"
+    },
+    "title": "MASA PUMPKIN"
+  },
+  "requirements": [
+    [
+      "masa"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

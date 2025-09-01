@@ -1,0 +1,88 @@
+{
+  "parent": "minecraft:mayday/root",
+  "criteria": {
+    "got_ashin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ashin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_masa": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:masa"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_ming": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ming"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_monster": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:monster"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "got_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Good job! You received the Mayday Banner Pattern as a reward. You can now make a banner with it.",
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "mayday:mayday_banner_pattern"
+    },
+    "title": "Success"
+  },
+  "requirements": [
+    [
+      "got_ashin"
+    ],
+    [
+      "got_monster"
+    ],
+    [
+      "got_stone"
+    ],
+    [
+      "got_masa"
+    ],
+    [
+      "got_ming"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "mayday:rewards/give_banner_pattern"
+    ]
+  },
+  "sends_telemetry_event": true
+}

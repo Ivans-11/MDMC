@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:mayday/monster",
+  "criteria": {
+    "got_monster_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:monster_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the monster_lantern lantern!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mayday:monster_lantern"
+    },
+    "title": "MONSTER_LANTERN LANTERN"
+  },
+  "requirements": [
+    [
+      "got_monster_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

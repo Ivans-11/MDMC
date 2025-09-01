@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:mayday/root",
+  "criteria": {
+    "ashin": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ashin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the ashin pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "icon": {
+      "count": 1,
+      "id": "mayday:ashin"
+    },
+    "title": "ASHIN PUMPKIN"
+  },
+  "requirements": [
+    [
+      "ashin"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:mayday/root",
+  "criteria": {
+    "monster": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:monster"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the monster pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "icon": {
+      "count": 1,
+      "id": "mayday:monster"
+    },
+    "title": "MONSTER PUMPKIN"
+  },
+  "requirements": [
+    [
+      "monster"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

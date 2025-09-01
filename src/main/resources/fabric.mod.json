@@ -20,6 +20,9 @@
 		],
 		"client": [
 			"com.example.MaydayClient"
+		],
+		"fabric-datagen": [
+			"com.example.datagen.MaydayDataGenerator"
 		]
 	},
 	"mixins": [

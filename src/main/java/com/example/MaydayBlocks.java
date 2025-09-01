@@ -1,7 +1,9 @@
 package com.example;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -30,6 +32,7 @@ import net.minecraft.util.Identifier;
 public class MaydayBlocks {
 
     private static final List<BlockItem> PUMPKIN_ITEMS = new ArrayList<>();
+    private static final Map<String, Integer> PUMPKIN_INDEX = new HashMap<>();
 
     public static final Item MAYDAY_BANNER_PATTERN = registerItem(
             "mayday_banner_pattern",
@@ -40,6 +43,13 @@ public class MaydayBlocks {
                         DataComponentTypes.PROVIDES_BANNER_PATTERNS,
                         TagKey.of(RegistryKeys.BANNER_PATTERN, Identifier.of(MaydayMod.MOD_ID, "pattern_item/mayday"))
                     )
+    );
+
+    public static final Item TUTORIAL_BOOK = registerItem(
+            "tutorial_book",
+            Item::new,
+            new Item.Settings()
+                   .maxCount(1)
     );
 
     public static CarvedPumpkinBlock registerPumpkinVariant(String name, MapColor mapColor) {
@@ -71,6 +81,7 @@ public class MaydayBlocks {
         );
 
         // Store the item for later use
+        PUMPKIN_INDEX.put(name, PUMPKIN_ITEMS.size());
         PUMPKIN_ITEMS.add(item);
         return block;
     }
@@ -93,6 +104,7 @@ public class MaydayBlocks {
         BlockItem item = registerItem(name, settings -> new BlockItem(block, settings));
 
         // Store the item for later use
+        PUMPKIN_INDEX.put(name, PUMPKIN_ITEMS.size());
         PUMPKIN_ITEMS.add(item);
         return block;
     }
@@ -126,5 +138,14 @@ public class MaydayBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.addAfter(Items.GUSTER_BANNER_PATTERN, MAYDAY_BANNER_PATTERN);
         });
+        // Add tutorial book
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
+            entries.addAfter(Items.WRITABLE_BOOK, TUTORIAL_BOOK);
+        });
+    }
+
+    // Get the pumpkin items by name
+    public static Item getPumpkinItem(String name) {
+        return PUMPKIN_ITEMS.get(PUMPKIN_INDEX.get(name));
     }
 }

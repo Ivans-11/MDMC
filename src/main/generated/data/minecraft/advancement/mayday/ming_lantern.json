@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:mayday/ming",
+  "criteria": {
+    "got_ming_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ming_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the ming_lantern lantern!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mayday:ming_lantern"
+    },
+    "title": "MING_LANTERN LANTERN"
+  },
+  "requirements": [
+    [
+      "got_ming_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

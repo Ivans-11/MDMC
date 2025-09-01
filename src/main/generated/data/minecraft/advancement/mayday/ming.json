@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:mayday/root",
+  "criteria": {
+    "ming": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ming"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the ming pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "icon": {
+      "count": 1,
+      "id": "mayday:ming"
+    },
+    "title": "MING PUMPKIN"
+  },
+  "requirements": [
+    [
+      "ming"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,7 +1,9 @@
 package com.example;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.minecraft.block.MapColor;
+import net.minecraft.item.ItemStack;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,5 +25,12 @@ public class MaydayMod implements ModInitializer {
         MaydayBlocks.registerPumpkinVariant("ming", MapColor.BLUE);
 		MaydayBlocks.registerLanternVariant("ming_lantern", MapColor.BLUE);
 		MaydayBlocks.init();
+
+		ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+			ItemStack book = new ItemStack(MaydayBlocks.TUTORIAL_BOOK);
+			if (!handler.player.getInventory().contains(book)) {
+				handler.player.giveItemStack(book);
+			}
+		});
 	}
 }

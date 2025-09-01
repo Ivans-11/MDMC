@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:mayday/root",
+  "criteria": {
+    "stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:stone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the stone pumpkin! Try wearing it or use it to make a pumpkin lantern.",
+    "icon": {
+      "count": 1,
+      "id": "mayday:stone"
+    },
+    "title": "STONE PUMPKIN"
+  },
+  "requirements": [
+    [
+      "stone"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

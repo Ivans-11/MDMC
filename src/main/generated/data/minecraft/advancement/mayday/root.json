@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "got_tutorial_book": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:tutorial_book"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
+    "description": "You received the tutorial book.",
+    "icon": {
+      "count": 1,
+      "id": "mayday:tutorial_book"
+    },
+    "title": "Welcome to the Maydayland!"
+  },
+  "requirements": [
+    [
+      "got_tutorial_book"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

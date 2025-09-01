@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:mayday/ashin",
+  "criteria": {
+    "got_ashin_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:ashin_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the ashin_lantern lantern!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mayday:ashin_lantern"
+    },
+    "title": "ASHIN_LANTERN LANTERN"
+  },
+  "requirements": [
+    [
+      "got_ashin_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

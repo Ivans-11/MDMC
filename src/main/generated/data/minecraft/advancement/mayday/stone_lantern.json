@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:mayday/stone",
+  "criteria": {
+    "got_stone_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:stone_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the stone_lantern lantern!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mayday:stone_lantern"
+    },
+    "title": "STONE_LANTERN LANTERN"
+  },
+  "requirements": [
+    [
+      "got_stone_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:mayday/masa",
+  "criteria": {
+    "got_masa_lantern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mayday:masa_lantern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "You got the masa_lantern lantern!",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "mayday:masa_lantern"
+    },
+    "title": "MASA_LANTERN LANTERN"
+  },
+  "requirements": [
+    [
+      "got_masa_lantern"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
