@@ -23,13 +23,24 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class MaydayBlocks {
 
-    public static final String MOD_ID = "mayday";
     private static final List<BlockItem> PUMPKIN_ITEMS = new ArrayList<>();
+
+    public static final Item MAYDAY_BANNER_PATTERN = registerItem(
+            "mayday_banner_pattern",
+            Item::new,
+            new Item.Settings()
+                    .maxCount(1)
+                    .component(
+                        DataComponentTypes.PROVIDES_BANNER_PATTERNS,
+                        TagKey.of(RegistryKeys.BANNER_PATTERN, Identifier.of(MaydayMod.MOD_ID, "pattern_item/mayday"))
+                    )
+    );
 
     public static CarvedPumpkinBlock registerPumpkinVariant(String name, MapColor mapColor) {
         // Register the pumpkin block
@@ -53,7 +64,7 @@ public class MaydayBlocks {
                                 EquippableComponent.builder(EquipmentSlot.HEAD)
                                         .swappable(false)
                                         //.cameraOverlay(Identifier.ofVanilla("misc/pumpkinblur"))
-                                        .cameraOverlay(Identifier.of(MOD_ID, "misc/" + name))
+                                        .cameraOverlay(Identifier.of(MaydayMod.MOD_ID, "misc/" + name))
                                         .build()
                         )
                 )
@@ -87,15 +98,21 @@ public class MaydayBlocks {
     }
     
     private static <T extends Block> T register(String path, Function<AbstractBlock.Settings, T> factory, AbstractBlock.Settings settings) {
-        final Identifier identifier = Identifier.of(MOD_ID, path);
+        final Identifier identifier = Identifier.of(MaydayMod.MOD_ID, path);
         final RegistryKey<Block> registryKey = RegistryKey.of(RegistryKeys.BLOCK, identifier);
         return Registry.register(Registries.BLOCK, identifier, factory.apply(settings.registryKey(registryKey)));
     }
 
     private static <T extends Item> T registerItem(String path, Function<Item.Settings, T> itemFunction) {
-        final Identifier identifier = Identifier.of(MOD_ID, path);
+        final Identifier identifier = Identifier.of(MaydayMod.MOD_ID, path);
 		final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, identifier);
 		return Registry.register(Registries.ITEM, registryKey, itemFunction.apply(new Item.Settings().registryKey(registryKey)));
+	}
+
+    private static Item registerItem(String path, Function<Item.Settings, Item> itemFunction, Item.Settings settings) {
+        final Identifier identifier = Identifier.of(MaydayMod.MOD_ID, path);
+		final RegistryKey<Item> registryKey = RegistryKey.of(RegistryKeys.ITEM, identifier);
+		return Registry.register(Registries.ITEM, registryKey, itemFunction.apply(settings.registryKey(registryKey)));
 	}
     
     public static void init() {
@@ -104,6 +121,10 @@ public class MaydayBlocks {
             for (BlockItem item : PUMPKIN_ITEMS) {
                 entries.addBefore(Items.HAY_BLOCK, item);
             }
+        });
+        // Add banner pattern
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.addAfter(Items.GUSTER_BANNER_PATTERN, MAYDAY_BANNER_PATTERN);
         });
     }
 }

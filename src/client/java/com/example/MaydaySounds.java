@@ -6,7 +6,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
 public class MaydaySounds {
-    public static final String MOD_ID = "mayday";
+    public static final String MOD_ID = MaydayClient.MOD_ID;
 
     public static final Identifier REAL_ID = Identifier.of(MOD_ID, "real");
     public static final Identifier NINE_ID = Identifier.of(MOD_ID, "nine");

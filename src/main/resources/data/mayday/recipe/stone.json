@@ -1,5 +1,6 @@
 {
     "type": "minecraft:crafting_shapeless",
+    "category": "misc",
     "ingredients": [
       "minecraft:carved_pumpkin",
       "minecraft:green_dye"

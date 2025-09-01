@@ -2,11 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "category": "misc",
     "ingredients": [
-      "minecraft:jack_o_lantern",
-      "minecraft:green_dye"
+      "minecraft:paper",
+      "#mayday:pumpkin_variant"
     ],
     "result": {
-      "id": "mayday:stone_lantern",
-      "count": 1
+      "count": 1,
+      "id": "mayday:mayday_banner_pattern"
     }
 }

@@ -8,5 +8,22 @@
     "item.mayday.stone": "Stone Pumpkin",
     "item.mayday.stone_lantern": "Stone Lantern",
     "item.mayday.ming": "Ming Pumpkin",
-    "item.mayday.ming_lantern": "Ming Lantern"
+    "item.mayday.ming_lantern": "Ming Lantern",
+    "item.mayday.mayday_banner_pattern": "Mayday Banner Pattern",
+    "block.mayday.banner.mayday.black": "Black Mayday Logo",
+    "block.mayday.banner.mayday.blue": "Blue Mayday Logo",
+    "block.mayday.banner.mayday.brown": "Brown Mayday Logo",
+    "block.mayday.banner.mayday.cyan": "Cyan Mayday Logo",
+    "block.mayday.banner.mayday.gray": "Gray Mayday Logo",
+    "block.mayday.banner.mayday.green": "Green Mayday Logo",
+    "block.mayday.banner.mayday.light_blue": "Light Blue Mayday Logo",
+    "block.mayday.banner.mayday.light_gray": "Light Gray Mayday Logo",
+    "block.mayday.banner.mayday.lime": "Lime Mayday Logo",
+    "block.mayday.banner.mayday.magenta": "Magenta Mayday Logo",
+    "block.mayday.banner.mayday.orange": "Orange Mayday Logo",
+    "block.mayday.banner.mayday.pink": "Pink Mayday Logo",
+    "block.mayday.banner.mayday.purple": "Purple Mayday Logo",
+    "block.mayday.banner.mayday.red": "Red Mayday Logo",
+    "block.mayday.banner.mayday.white": "White Mayday Logo",
+    "block.mayday.banner.mayday.yellow": "Yellow Mayday Logo"
 }

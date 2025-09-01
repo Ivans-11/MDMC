@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "mayday:ashin_lantern",
+        "mayday:monster_lantern",
+        "mayday:stone_lantern",
+        "mayday:masa_lantern",
+        "mayday:ming_lantern"
+    ]
+}
