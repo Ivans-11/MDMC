@@ -47,7 +47,7 @@ public class MaydayBlocks {
 
     public static final Item TUTORIAL_BOOK = registerItem(
             "tutorial_book",
-            Item::new,
+            TutorialBookItem::new,
             new Item.Settings()
                    .maxCount(1)
     );

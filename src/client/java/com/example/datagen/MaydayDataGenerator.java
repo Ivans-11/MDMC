@@ -47,8 +47,8 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
             AdvancementEntry rootAdvancement = Advancement.Builder.create()
                 .display(
                         MaydayBlocks.TUTORIAL_BOOK,
-                        Text.translatable("advance.mayday.tutorial_book"), // title
-                        Text.translatable("advance.mayday.welcome"), // description
+                        Text.translatable("advance.mayday.welcome"), // title
+                        Text.translatable("advance.mayday.welcome.description"), // description
                         Identifier.of("gui/advancements/backgrounds/adventure"), // background
                         AdvancementFrame.TASK, // options: TASK, CHALLENGE, GOAL
                         true, // Show toast top right
@@ -70,11 +70,11 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
             AdvancementEntry gotMasaLanternAdvancement = gotLanternsAdvancement(consumer, "masa_lantern", gotMasaAdvancement);
             AdvancementEntry gotMingLanternAdvancement = gotLanternsAdvancement(consumer, "ming_lantern", gotMingAdvancement);
 
-            AdvancementEntry successAdvancement = Advancement.Builder.create().parent(rootAdvancement)
+            AdvancementEntry goalAdvancement = Advancement.Builder.create().parent(rootAdvancement)
                 .display(
                         MaydayBlocks.MAYDAY_BANNER_PATTERN,
-                        Text.translatable("advance.mayday.success"),
-                        Text.translatable("advance.mayday.mayday_banner_pattern"),
+                        Text.translatable("advance.mayday.goal"),
+                        Text.translatable("advance.mayday.goal.description"),
                         null,
                         AdvancementFrame.GOAL,
                         true,
@@ -90,13 +90,13 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
                     RegistryKeys.LOOT_TABLE,
                     Identifier.of(MaydayClient.MOD_ID, "rewards/give_banner_pattern")
                 )))
-                .build(consumer, MaydayClient.MOD_ID + "/success");
+                .build(consumer, MaydayClient.MOD_ID + "/goal");
             
-            AdvancementEntry finalAdvancement = Advancement.Builder.create().parent(successAdvancement)
+            AdvancementEntry endAdvancement = Advancement.Builder.create().parent(goalAdvancement)
                 .display(
                         MaydayBlocks.MAYDAY_BANNER_PATTERN,
-                        Text.translatable("advance.mayday.final"),
-                        Text.translatable("advance.mayday.final.description"),
+                        Text.translatable("advance.mayday.end"),
+                        Text.translatable("advance.mayday.end.description"),
                         null,
                         AdvancementFrame.GOAL,
                         true,
@@ -108,7 +108,7 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
                 .criterion("got_stone_lantern", InventoryChangedCriterion.Conditions.items(MaydayBlocks.getPumpkinItem("stone_lantern")))
                 .criterion("got_masa_lantern", InventoryChangedCriterion.Conditions.items(MaydayBlocks.getPumpkinItem("masa_lantern")))
                 .criterion("got_ming_lantern", InventoryChangedCriterion.Conditions.items(MaydayBlocks.getPumpkinItem("ming_lantern")))
-                .build(consumer, MaydayClient.MOD_ID + "/final");
+                .build(consumer, MaydayClient.MOD_ID + "/end");
         }
 
         private AdvancementEntry gotPumpkinsAdvancement(Consumer<AdvancementEntry> consumer, String name, AdvancementEntry parent) {

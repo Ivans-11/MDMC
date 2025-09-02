@@ -1,14 +1,14 @@
 // 1.21.8	-999999999-01-01T00:00:00	MaydayLand/Advancements
 d85097ba30701336b8ea669430ae0806202a277b data/minecraft/advancement/mayday/ashin.json
 9ce765e32cc484d494139054158cafa1b2ac4076 data/minecraft/advancement/mayday/ashin_lantern.json
-98409b8f7609549f015e2e41e143ff450febc9a0 data/minecraft/advancement/mayday/final.json
+7b16e705142a08914d6599e9d10bad1dcc8a3b6a data/minecraft/advancement/mayday/end.json
+15406ffe99082f7b7c640f8b82c769560a846c87 data/minecraft/advancement/mayday/goal.json
 f7375cbbcf4e80e22202edb3a7ce0c5bf4597ba9 data/minecraft/advancement/mayday/masa.json
 f92f94e9ec4e351be92b01cd302264e56a59d107 data/minecraft/advancement/mayday/masa_lantern.json
 ab5e34dccf9d275388c202b87f75f3a726072b18 data/minecraft/advancement/mayday/ming.json
 a92dc1875902c9ab236c79eab9fd6472fffffabf data/minecraft/advancement/mayday/ming_lantern.json
 7fab4d32bb48c0af7f4ca13f31e8e19b17b27365 data/minecraft/advancement/mayday/monster.json
 affcbee2819f901c361cf13866c2481ced70fa96 data/minecraft/advancement/mayday/monster_lantern.json
-a81996922db10f318d4a863ef7f9cc3b052c3b2e data/minecraft/advancement/mayday/root.json
+730309585dee2cf91d1c15225e4649a61fd213fd data/minecraft/advancement/mayday/root.json
 cea830a55ba54559d0a57b74f2ff8eda444c3f39 data/minecraft/advancement/mayday/stone.json
 5108105e325ff9d9fb5e79db360244e8ca9b7184 data/minecraft/advancement/mayday/stone_lantern.json
-b0ece9cc9c4b28debf978bfd4e6348be9d3d794d data/minecraft/advancement/mayday/success.json

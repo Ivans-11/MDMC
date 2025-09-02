@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:mayday/success",
+  "parent": "minecraft:mayday/goal",
   "criteria": {
     "got_ashin_lantern": {
       "conditions": {
@@ -54,7 +54,7 @@
   },
   "display": {
     "description": {
-      "translate": "advance.mayday.final.description"
+      "translate": "advance.mayday.end.description"
     },
     "frame": "goal",
     "hidden": true,
@@ -63,7 +63,7 @@
       "id": "mayday:mayday_banner_pattern"
     },
     "title": {
-      "translate": "advance.mayday.final"
+      "translate": "advance.mayday.end"
     }
   },
   "requirements": [

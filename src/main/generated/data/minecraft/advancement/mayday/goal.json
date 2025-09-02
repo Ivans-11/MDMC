@@ -54,7 +54,7 @@
   },
   "display": {
     "description": {
-      "translate": "advance.mayday.mayday_banner_pattern"
+      "translate": "advance.mayday.goal.description"
     },
     "frame": "goal",
     "hidden": true,
@@ -63,7 +63,7 @@
       "id": "mayday:mayday_banner_pattern"
     },
     "title": {
-      "translate": "advance.mayday.success"
+      "translate": "advance.mayday.goal"
     }
   },
   "requirements": [

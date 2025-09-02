@@ -14,14 +14,14 @@
   "display": {
     "background": "minecraft:gui/advancements/backgrounds/adventure",
     "description": {
-      "translate": "advance.mayday.welcome"
+      "translate": "advance.mayday.welcome.description"
     },
     "icon": {
       "count": 1,
       "id": "mayday:tutorial_book"
     },
     "title": {
-      "translate": "advance.mayday.tutorial_book"
+      "translate": "advance.mayday.welcome"
     }
   },
   "requirements": [

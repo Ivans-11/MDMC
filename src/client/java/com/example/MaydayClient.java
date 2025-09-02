@@ -20,6 +20,7 @@ public class MaydayClient implements ClientModInitializer {
 				String key = head.getItem().toString();
 				if (key.contains("mayday")) {
 					if (maydaySoundInstance == null) {
+						client.getMusicTracker().stop();
 						maydaySoundInstance = new MaydaySoundInstance(client.player, MaydaySounds.getSound(key), SoundCategory.PLAYERS, key);
 						client.getSoundManager().play(maydaySoundInstance);
 					} else if (!maydaySoundInstance.name.equals(key)) {
@@ -30,6 +31,7 @@ public class MaydayClient implements ClientModInitializer {
 				} else if (maydaySoundInstance != null) {
 					maydaySoundInstance.stop();
 					maydaySoundInstance = null;
+					client.getMusicTracker().tick();
 				}
 			}
 		});
