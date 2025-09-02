@@ -1,7 +1,7 @@
-// 1.21.8	-999999999-01-01T00:00:00	MaydayLand/Advancements
+// 1.21.8	-999999999-01-01T00:00:00	MDMC/Advancements
 d85097ba30701336b8ea669430ae0806202a277b data/minecraft/advancement/mayday/ashin.json
 9ce765e32cc484d494139054158cafa1b2ac4076 data/minecraft/advancement/mayday/ashin_lantern.json
-7b16e705142a08914d6599e9d10bad1dcc8a3b6a data/minecraft/advancement/mayday/end.json
+180a0c0afed42d25fa691544d20182831a951b44 data/minecraft/advancement/mayday/end.json
 15406ffe99082f7b7c640f8b82c769560a846c87 data/minecraft/advancement/mayday/goal.json
 f7375cbbcf4e80e22202edb3a7ce0c5bf4597ba9 data/minecraft/advancement/mayday/masa.json
 f92f94e9ec4e351be92b01cd302264e56a59d107 data/minecraft/advancement/mayday/masa_lantern.json

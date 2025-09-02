@@ -52,6 +52,8 @@ public class MaydayBlocks {
                    .maxCount(1)
     );
 
+    public static final Item GLOW_STICK = registerItem("glow_stick", settings -> new GlowStickItem(settings));
+
     public static CarvedPumpkinBlock registerPumpkinVariant(String name, MapColor mapColor) {
         // Register the pumpkin block
         CarvedPumpkinBlock block = register(
@@ -138,9 +140,10 @@ public class MaydayBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.addAfter(Items.GUSTER_BANNER_PATTERN, MAYDAY_BANNER_PATTERN);
         });
-        // Add tutorial book
+        // Add tools
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.addAfter(Items.WRITABLE_BOOK, TUTORIAL_BOOK);
+            entries.add(GLOW_STICK);
         });
     }
 

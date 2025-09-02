@@ -94,7 +94,7 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
             
             AdvancementEntry endAdvancement = Advancement.Builder.create().parent(goalAdvancement)
                 .display(
-                        MaydayBlocks.MAYDAY_BANNER_PATTERN,
+                        MaydayBlocks.GLOW_STICK,
                         Text.translatable("advance.mayday.end"),
                         Text.translatable("advance.mayday.end.description"),
                         null,
@@ -108,6 +108,10 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
                 .criterion("got_stone_lantern", InventoryChangedCriterion.Conditions.items(MaydayBlocks.getPumpkinItem("stone_lantern")))
                 .criterion("got_masa_lantern", InventoryChangedCriterion.Conditions.items(MaydayBlocks.getPumpkinItem("masa_lantern")))
                 .criterion("got_ming_lantern", InventoryChangedCriterion.Conditions.items(MaydayBlocks.getPumpkinItem("ming_lantern")))
+                .rewards(AdvancementRewards.Builder.loot(RegistryKey.of(
+                    RegistryKeys.LOOT_TABLE,
+                    Identifier.of(MaydayClient.MOD_ID, "rewards/give_glow_stick")
+                )))
                 .build(consumer, MaydayClient.MOD_ID + "/end");
         }
 
@@ -150,12 +154,17 @@ public class MaydayDataGenerator implements DataGeneratorEntrypoint {
         }
        
         public static final RegistryKey<LootTable> GIVE_BANNER_PATTERN = RegistryKey.of(RegistryKeys.LOOT_TABLE, Identifier.of(MaydayClient.MOD_ID, "rewards/give_banner_pattern"));
+        public static final RegistryKey<LootTable> GIVE_GLOW_STICK = RegistryKey.of(RegistryKeys.LOOT_TABLE, Identifier.of(MaydayClient.MOD_ID, "rewards/give_glow_stick"));
        
         @Override
         public void accept(BiConsumer<RegistryKey<LootTable>, LootTable.Builder> lootTableBiConsumer) {
             lootTableBiConsumer.accept(GIVE_BANNER_PATTERN, LootTable.builder()
                     .pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0F))
                     .with(ItemEntry.builder(MaydayBlocks.MAYDAY_BANNER_PATTERN)
+            )));
+            lootTableBiConsumer.accept(GIVE_GLOW_STICK, LootTable.builder()
+                   .pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0F))
+                   .with(ItemEntry.builder(MaydayBlocks.GLOW_STICK)
             )));
         }
     }

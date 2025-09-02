@@ -60,7 +60,7 @@
     "hidden": true,
     "icon": {
       "count": 1,
-      "id": "mayday:mayday_banner_pattern"
+      "id": "mayday:glow_stick"
     },
     "title": {
       "translate": "advance.mayday.end"
@@ -83,5 +83,10 @@
       "got_ming_lantern"
     ]
   ],
+  "rewards": {
+    "loot": [
+      "mayday:rewards/give_glow_stick"
+    ]
+  },
   "sends_telemetry_event": true
 }

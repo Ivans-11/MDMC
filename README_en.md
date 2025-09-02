@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="256" height="256" src="src\main\resources\assets\mayday\icon.png">
+  <img src="image/maydayland.png">
 </p>
 
 English | [中文](README.md)
@@ -28,6 +28,7 @@ To use this mod, you need to have **Minecraft Fabric Loader** installed. If you 
 * Download the latest `.jar` file from any of the following links:
 
   * [Releases](https://github.com/Ivans-11/MDMC/releases)
+  * [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mdmc)
 
 * If you haven’t installed Fabric API yet, go to [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) and download the matching `.jar` file. In [Install the Mod](#install), place it in the same folder as this mod’s `.jar` file.
 
@@ -39,6 +40,10 @@ To use this mod, you need to have **Minecraft Fabric Loader** installed. If you 
 3. Place the downloaded mod `.jar` file into the `mods` folder.
 4. Launch Minecraft Launcher and select the previously configured profile.
 5. Once in the game, the mod will be active.
+
+## Gameplay
+
+Please carefully read the tutorial book in the game to understand the function of the mod.
 
 ## Acknowledgements
 

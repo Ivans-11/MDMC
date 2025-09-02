@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="256" height="256" src="src\main\resources\assets\mayday\icon.png">
+  <img src="image/maydayland.png">
 </p>
 
 [English](README_en.md) | 中文
@@ -27,6 +27,7 @@
 
 - 通过以下任意链接下载最新版 `.jar` 文件：
     - [Releases](https://github.com/Ivans-11/MDMC/releases)
+    - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mdmc)
 
 - 如果尚未安装 Fabric API ，前往 [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) 下载对应版本 `.jar` 文件，之后与本模组 `.jar` 文件放入同一目录。
 
@@ -37,6 +38,10 @@
 3. 将下载的模组 `.jar` 文件放入 `mods` 文件夹。
 4. 启动 Minecraft Launcher 并选择之前设置的配置。
 5. 进入游戏后，模组即已生效。
+
+## 玩法
+
+请在游戏中仔细阅读教程书，了解模组的具体玩法。
 
 ## 致谢
 
