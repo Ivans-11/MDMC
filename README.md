@@ -2,40 +2,38 @@
   <img width="256" height="256" src="src\main\resources\assets\mayday\icon.png">
 </p>
 
-English | [中文](README_zh.md)
+[English](README_en.md) | 中文
 
 # MDMC
 
-Explore MaydayLand in Minecraft
+在 Minecraft 中，开启一段 MaydayLand 的旅程
 
-## Notice
+## 说明
 
-This mod supports the Java Edition of Minecraft 1.21.8 and is developed using Fabric.
+本模组支持的 Minecraft 版本是 JAVA 版 1.21.8 ，使用 Fabric 进行开发。
 
-## Installation
+## 安装
 
-To use this mod, you need to have **Minecraft Fabric Loader** installed. If you already have it, skip to [Download the Mod](#download).
+要使用本模组，你需要确保已经安装 **Minecraft Fabric Loader** ，若已安装，直接跳转到 [下载模组](#install)
 
-### 1: Install Fabric Loader
+### 1：安装 Fabric Loader
 
-1. Visit the [Fabric Official Website](https://fabricmc.net/use/) to download the latest Fabric Installer.
-2. Run the downloaded file and install Fabric Loader for the corresponding Minecraft version (this mod only supports 1.21.8).
-3. Launch Minecraft Launcher and select the Fabric version profile.
-
-<a id="download"></a>
-### 2: Download the Mod
-
-* Download the latest `.jar` file from any of the following links:
-
-  * [Releases](https://github.com/Ivans-11/MDMC/releases)
-
-* If you haven’t installed Fabric API yet, go to [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) and download the matching `.jar` file. In [Install the Mod](#install), place it in the same folder as this mod’s `.jar` file.
+1. 访问 [Fabric 官网](https://fabricmc.net/use/) 下载最新的 Fabric Installer。
+2. 点击运行下载的文件，安装对应 Minecraft 版本的 Fabric Loader（本模组仅支持 1.21.8）
+3. 启动 Minecraft Launcher 并选择 Fabric 版本配置。
 
 <a id="install"></a>
-### 3: Install the Mod
+### 2：下载模组
 
-1. Open your Minecraft installation directory (on Windows, typically: `C:\Users\YourUsername\AppData\Roaming\.minecraft`, or a custom path if you set one).
-2. Locate or create the `mods` folder.
-3. Place the downloaded mod `.jar` file into the `mods` folder.
-4. Launch Minecraft Launcher and select the previously configured profile.
-5. Once in the game, the mod will be active.
+- 通过以下任意链接下载最新版 `.jar` 文件：
+    - [Releases](https://github.com/Ivans-11/MDMC/releases)
+
+- 如果尚未安装 Fabric API ，前往 [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) 下载对应版本 `.jar` 文件，之后与本模组 `.jar` 文件放入同一目录。
+
+### 3：安装模组
+
+1. 打开 Minecraft 安装目录（Windows一般在: `C:\Users\你的用户名\AppData\Roaming\.minecraft`，也可自行设置）
+2. 找到或创建 `mods` 文件夹。
+3. 将下载的模组 `.jar` 文件放入 `mods` 文件夹。
+4. 启动 Minecraft Launcher 并选择之前设置的配置。
+5. 进入游戏后，模组即已生效。
