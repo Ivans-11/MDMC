@@ -2,14 +2,14 @@
 	"schemaVersion": 1,
 	"id": "mayday",
 	"version": "${version}",
-	"name": "MaydayLand",
-	"description": "History of Tomorrow",
+	"name": "MDMC",
+	"description": "Explore MaydayLand in Minecraft",
 	"authors": [
 		"Ivans"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Ivans-11/MDMC",
+		"sources": "https://github.com/Ivans-11/MDMC"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/mayday/icon.png",
