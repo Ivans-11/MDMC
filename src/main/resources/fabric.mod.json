@@ -11,7 +11,7 @@
 		"homepage": "https://github.com/Ivans-11/MDMC",
 		"sources": "https://github.com/Ivans-11/MDMC"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/mayday/icon.png",
 	"environment": "*",
 	"entrypoints": {

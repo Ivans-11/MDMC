@@ -37,3 +37,7 @@
 3. 将下载的模组 `.jar` 文件放入 `mods` 文件夹。
 4. 启动 Minecraft Launcher 并选择之前设置的配置。
 5. 进入游戏后，模组即已生效。
+
+## 致谢
+
+本项目基于 [FabricMC/fabric-example-mod](https://github.com/FabricMC/fabric-example-mod) 开发。

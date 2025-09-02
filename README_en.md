@@ -39,3 +39,7 @@ To use this mod, you need to have **Minecraft Fabric Loader** installed. If you 
 3. Place the downloaded mod `.jar` file into the `mods` folder.
 4. Launch Minecraft Launcher and select the previously configured profile.
 5. Once in the game, the mod will be active.
+
+## Acknowledgements
+
+This project is based on [FabricMC/fabric-example-mod](https://github.com/FabricMC/fabric-example-mod). 
